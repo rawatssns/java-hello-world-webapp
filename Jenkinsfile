@@ -10,7 +10,7 @@ pipeline {
 		stage ("Deploy to Tomcat Server") {
 			steps{
 				echo "Deploy the code on Tomcat Server"
-				sh 'cp target/java-hello-world.war /opt/tomcat/apache-tomcat-8.5.57/webapps/java-hello-world.war'
+				sh 'sudo cp target/java-hello-world.war /opt/tomcat/apache-tomcat-8.5.57/webapps/'
 			}
 		}
 	}
