@@ -10,7 +10,7 @@ pipeline {
 		stage ("Deploy to Tomcat Server") {
 			steps{
 				echo "Deploy the code on Tomcat Server"
-				sh 'cp /var/lib/jenkins/workspace/sample_project/target/java-hello-world.war /opt/tomcat/apache-tomcat-8.5.57/webapps/'
+				sh 'cp target/java-hello-world.war /opt/tomcat/apache-tomcat-8.5.57/webapps/java-hello-world.war'
 			}
 		}
 	}
