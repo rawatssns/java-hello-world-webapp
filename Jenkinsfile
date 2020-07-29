@@ -4,7 +4,7 @@ pipeline {
 		stage ("Build Maven") {
 			steps {
 				echo "Build the code via Maven"
-				sh 'mvn clean package'
+				sh '/opt/apache-maven-3.6.3/bin/mvn clean package'
 			}
 		}
 		stage ("Deploy to Tomcat Server") {
